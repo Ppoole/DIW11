@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #cabeza {
+        border-color: blue;
+        border-width: 3px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        width: 60%;
+        border-style: solid;
+        text-align: center;
+        line-height: 30px;
+        font-family: fruktur;
+        color: blue;
+        font-size: large;
+        margin: auto;
+      }
+
+      figcaption {
+        text-align: center;
+        color: blue;
+        z-index: 1;
+        font-family: "Open Sans", sans;
+        caption-side: top;
+      }
+
+      figure {
+        float: left;
+        border: 1px solid blue;
+    
+        width: 10%;
+        height: auto;
+      }
+      img {
+          opacity: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+      }
+
+      img:hover{
+        opacity: 1;
+      }
+      figure:active{
+          width:20%;
+          height: auto;
+          border: 1px solid blue;
+      }
+
+      hr{
+          clear:left;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="cabeza" name="techo">
+      Linea 1<br />
+      Linea 2
+    </div>
+    <hr />
+    <br />
+    <div id="fotos">
+      <figure>
+        <figcaption>Una pizza.</figcaption>
+        <img name="imagen" src="pizza.svg" alt="Pizza" />
+      </figure>
+      <figure>
+        <figcaption>Una imagen stock.</figcaption>
+        <img name="imagen" src="stock.svg" alt="Pizza" />
+      </figure>
+      <figure>
+        <figcaption>Un avion.</figcaption>
+        <img name="imagen" src="https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/9091a3af-d008-43f2-abd6-e2b551407a28.jpg" alt="Pizza" />
+      </figure>
+      <figure>
+        <figcaption>Un volcán.</figcaption>
+        <img name="imagen" src="https://i.guim.co.uk/img/media/52b7aefdc051b47159121fbda844565062b9f856/0_7_6933_4160/master/6933.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=11f7d58d6f74f7df8aa0453b02739a58" alt="Pizza" />
+      </figure>
+    </div>
+    <hr>
+  </body>
+</html>
